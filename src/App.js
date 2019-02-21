@@ -1,5 +1,6 @@
 // Packages
 import React, { Component } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 // Components
 import NavBar from './components/NavBar'
@@ -16,11 +17,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <NavBar />
 
+      <div className="App">
+        <Router>
+          
+          <NavBar />
+
+        </ Router>
       </div>
-    );
+    )
   }
 }
 

@@ -1,0 +1,24 @@
+/* NavBar Styling */
+
+.navbar {
+  background-color: #393E46;
+}
+
+.navbar>a {
+  color: #FFF4E0;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=FFF4E0');
+}
+
+
+/* Home Styling */
+html {
+  background: url(images/background-home.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #393E46;
+}

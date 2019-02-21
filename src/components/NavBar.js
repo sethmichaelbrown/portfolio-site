@@ -13,7 +13,7 @@ const NavBar = (props) => {
 
   return (
     <div className="NavBar">
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-*">
         <Link className="navbar-brand name" to="/">Seth Michael Brown</Link>
         <button className="navbar-toggler custom toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>

@@ -11,7 +11,13 @@ import './Fonts.css'
 
 class App extends Component {
   state = {
+    displayPortfolio: false,
+  }
 
+  changeDisplayPortfolio = () => {
+    const newState = { ...this.state }
+    newState.displayPortfolio = !newState.displayPortfolio
+    this.setState({ displayPortfolio: newState.displayPortfolio })
   }
 
 
@@ -20,8 +26,10 @@ class App extends Component {
 
       <div className="App">
         <Router>
-          
-          <NavBar />
+
+          <NavBar 
+            changeDisplayPortfolio={this.changeDisplayPortfolio}
+            displayPortfolio={this.state.displayPortfolio}/>
 
         </ Router>
       </div>

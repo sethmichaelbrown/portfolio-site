@@ -4,6 +4,7 @@ import { Route, Link } from 'react-router-dom'
 
 // Components
 import Home from './Home'
+import Portfolio from './Portfolio'
 
 // Styling
 import '../App.css'
@@ -21,8 +22,8 @@ const NavBar = (props) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              {/* <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a> */}
+            <li className="nav-item">
+              <Link className="nav-link" to='/portfolio'>Portfolio</Link>
             </li>
             <li className="nav-item">
               {/* <a className="nav-link" href="#">Link</a> */}
@@ -50,6 +51,7 @@ const NavBar = (props) => {
 
 
       <Route exact path="/" component={Home} />
+      <Route exact path="/portfolio" component={Portfolio} />
     </div>
   )
 }

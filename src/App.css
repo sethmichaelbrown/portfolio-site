@@ -1,3 +1,18 @@
+html,
+body {
+  background: url(images/background-home.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #393E46;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+
 /* NavBar Styling */
 
 .navbar {
@@ -14,11 +29,37 @@
 
 
 /* Home Styling */
-html {
-  background: url(images/background-home.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: #393E46;
+.header-row {
+  margin-top: 15vh;
+  background: rgba(57, 62, 70, .5)
+}
+
+.header {
+  text-align: center;
+  padding: 1%;
+  color: #FFF4E0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  border: solid;
+  border-width: 1px;
+  border-color: #FFF4E0;
+  color: #FFF4E0;
+  margin-top: 30vh;
+  background: rgba(57, 62, 70, .5)
+}
+
+.btn:hover {
+  text-decoration: none;
+  border-color: rgba(57, 62, 70, 1);
+  color: rgba(57, 62, 70, 1);
+  margin-top: 30vh;
+  background: rgba(255, 244, 224, .75)
 }

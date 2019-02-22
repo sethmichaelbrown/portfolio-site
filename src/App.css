@@ -26,7 +26,7 @@ body {
 
 
 
-.nav-link:hover{
+.nav-link:hover {
   color: rgba(255, 244, 224, .75)
 }
 
@@ -34,7 +34,7 @@ body {
   background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=FFF4E0');
 }
 
-.custom-toggler:focus{
+.custom-toggler:focus {
   border: none;
   outline: none;
 }
@@ -107,8 +107,14 @@ body {
 }
 
 .card-img-top {
-    width: 100%;
-    height: 20vw;
-    object-fit: cover;
-    object-position: top;
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-header{
+    justify-content: center;
+  }
 }

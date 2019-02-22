@@ -15,7 +15,7 @@ const Home = (props) => {
       <div className="row header-row">
         <div className="col-12 header">
           <h1>Built, Beautifully</h1>
-          <h5>Software Engineer || Full-Stack || ReactJS & Native </h5>
+          <h5>Software Engineer | Full-Stack | ReactJS & Native </h5>
         </div>
       </div>
       <div className="row">
@@ -23,6 +23,9 @@ const Home = (props) => {
           <Link className='link-text' to='/portfolio'>
             <button type="button" className="btn btn-lg mb-3">Portfolio</button>
           </Link>
+           {/* <Link className='link-text' to='/contact'>
+            <button type="button" className="btn btn-lg mb-3 ml-1">Contact</button>
+          </Link> */}
 
         </div>
       </div>

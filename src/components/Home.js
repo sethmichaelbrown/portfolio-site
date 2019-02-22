@@ -1,6 +1,6 @@
 // Packages
 import React from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 // Components
 

@@ -25,7 +25,6 @@ body {
 }
 
 
-
 .nav-link:hover {
   color: rgba(255, 244, 224, .75)
 }
@@ -37,6 +36,18 @@ body {
 .custom-toggler:focus {
   border: none;
   outline: none;
+}
+
+/* Contact Styling */
+
+.card-header {
+  background-color: #393E46;
+  color: #FFF4E0;
+}
+
+.contact-card-body {
+  color: #393E46;
+  background-color: #FFF4E0;
 }
 
 
@@ -84,7 +95,8 @@ body {
   overflow: scroll;
 }
 
-.portfolio-intro, .contact-intro {
+.portfolio-intro,
+.contact-intro {
   background: rgba(57, 62, 70, .85);
   padding: 1vh;
   color: rgba(255, 244, 224, 1);
@@ -114,7 +126,15 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .contact-header{
+  .contact-header {
     justify-content: center;
+  }
+
+  .profile-text {
+    margin-left: 2vw;
+  }
+
+  .card-img-top {
+    height: 20vh;
   }
 }

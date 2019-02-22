@@ -18,7 +18,8 @@ import '../Fonts.css'
 
 const NavBar = (props) => {
 
-  const links = ['About', 'Contact', 'Portfolio']
+  let links = ['Contact', 'Portfolio'].sort()
+
 
   return (
     <div className="NavBar">
@@ -52,9 +53,12 @@ const NavBar = (props) => {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/portfolio" component={Portfolio} />
+
+        {links.map(link => {
+          return (
+            <Route exact path={`/${link.toLowerCase()}`} component={link} />
+          )
+        })}
 
         <Route component={NotFound} />
       </Switch>

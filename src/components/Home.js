@@ -21,8 +21,7 @@ const Home = (props) => {
       <div className="row">
         <div className="col-12 btn-container">
           <Link className='link-text' to='/portfolio'>
-            <button type="button" className="btn btn-lg mb-3">Portfolio
-              </button>
+            <button type="button" className="btn btn-lg mb-3">Portfolio</button>
           </Link>
 
         </div>

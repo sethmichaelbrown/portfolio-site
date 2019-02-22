@@ -4,6 +4,9 @@ import { Route, Link } from 'react-router-dom'
 
 // Components
 
+// Images
+import profile from '../images/smb-portrait.png'
+
 import bts from './project-images/bts-app.png'
 import riverfront from './project-images/riverfront-hearing.png'
 import rjmusic from './project-images/rjmusic.png'
@@ -13,6 +16,8 @@ import '../App.css'
 import '../Fonts.css'
 
 const Portfolio = (props) => {
+
+  const bio = 'My name is Seth Brown, I am a full stack developer with an emphasis on frontend work in ReactJS. I have worked with individual clients looking for a website for their small business, non-profits, and large companies looking to move away from bulky and costly solutions like Wix. Clean aesthetics, ease of use and navigation, powerful capabilities, and clear communication during the build are goals I strive for on every project. Please feel free to check out my GitHub account or get in contact about your project. I look forward to hearing from you.'
 
   const projects = [
     {
@@ -43,15 +48,23 @@ const Portfolio = (props) => {
 
   return (
     <div className="Portfolio container">
-      <div className="row">
-        <div className="col-5">
-          Profile Image
+      <div className="row portfolio-intro my-2">
+        <div className="col-lg-2 col-md-3 col-sm-6 mt-1">
+          <a href="https://www.linkedin.com/in/seth-brown1/" target='_blank'><div className="smb-profile" /></a>
+
         </div>
-        <div className="col-7">
-          Intro Text
+        <div className="col-lg-10 col-md-7 col-sm-6 profile-text">
+          <p>{bio}</p>
+          <button type="button" className="btn btn-lg mr-2">GitHub</button>
+          <Link className='link-text' to='/contact'>
+            <button type="button" className="btn btn-lg">Portfolio</button>
+          </Link>
+
+
+        </div>
       </div>
 
-      </div>
+
       <div className="row">
         {projects.map(project => {
           return (
@@ -61,9 +74,9 @@ const Portfolio = (props) => {
                 <div class="card-body">
                   <h5 class="card-title">{project.title}</h5>
                   <p class="card-text card-description">{project.description}</p>
-                  {project.link ? 
-                  <a href={project.link} class="btn mr-2">See Site</a> :
-                  <a href={project.link} disabled class="btn mr-2 disabled">In Progress</a>
+                  {project.link ?
+                    <a href={project.link} target="_blank" class="btn mr-2">See Site</a> :
+                    <a href={project.link} disabled class="btn mr-2 disabled">In Progress</a>
                   }
                   <a href={project.githubLink} class="btn ">See Code</a>
                 </div>
@@ -77,7 +90,7 @@ const Portfolio = (props) => {
 
 
 
-    </div>
+    </div >
   )
 }
 

@@ -20,7 +20,8 @@ body {
   background-color: #393E46;
 }
 
-.navbar>a {
+.navbar>a,
+.nav-link {
   color: #FFF4E0;
 }
 
@@ -71,4 +72,26 @@ body {
 
 .card-description {
   overflow: scroll;
+}
+
+.portfolio-intro {
+  color: #393E46;
+  padding: 1vh;
+  background: rgba(255, 244, 224, .8);
+  border-radius: 10px;
+    /* background-color: #FFF4E0; */
+}
+
+.profile-text {
+  padding: 1vh;
+}
+
+.smb-profile {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 1000px;
+  background-image: url('images/smb-portrait.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: none;
 }

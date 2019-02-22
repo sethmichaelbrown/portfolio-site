@@ -84,7 +84,7 @@ body {
   overflow: scroll;
 }
 
-.portfolio-intro {
+.portfolio-intro, .contact-intro {
   background: rgba(57, 62, 70, .85);
   padding: 1vh;
   color: rgba(255, 244, 224, 1);

@@ -6,8 +6,10 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 // Components
 import Home from './Home'
-import Portfolio from './Portfolio'
+import About from './About'
 import Contact from './Contact'
+import Portfolio from './Portfolio'
+
 import NotFound from './NotFound'
 
 // Styling
@@ -15,6 +17,8 @@ import '../App.css'
 import '../Fonts.css'
 
 const NavBar = (props) => {
+
+  const links = ['About', 'Contact', 'Portfolio']
 
   return (
     <div className="NavBar">
@@ -34,12 +38,13 @@ const NavBar = (props) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-              <Link className="nav-link" to='/contact'>Contact</Link>
-            </li>
-            <li className="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-              <Link className="nav-link" to='/portfolio'>Portfolio</Link>
-            </li>
+            {links.map(link => {
+              return (
+                <li className="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+                  <Link className="nav-link" to={`/${link.toLowerCase()}`}>{link}</Link>
+                </li>
+              )
+            })}
           </ul>
         </div>
 
@@ -47,8 +52,10 @@ const NavBar = (props) => {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/portfolio" component={Portfolio} />
+
         <Route component={NotFound} />
       </Switch>
     </div>

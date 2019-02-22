@@ -18,7 +18,7 @@ import '../Fonts.css'
 
 const Portfolio = (props) => {
 
-  const bio = `My name is Seth Brown, I am a full stack developer with an emphasis on frontend work in ReactJS. I have worked with individual clients looking for a website for their small business, non-profits, and large companies looking to move away from bulky and costly solutions like Wix. Clean aesthetics, ease of use and navigation, powerful capabilities, and clear communication during the build are goals I strive for on every project.` 
+  const bio = `My name is Seth Brown, I am a full stack developer with an emphasis on frontend work in ReactJS. I have worked with individual clients looking for a website for their small business, non-profits, and large companies looking to move away from bulky and costly solutions like Wix. Clean aesthetics, ease of use and navigation, powerful capabilities, and clear communication during the build are goals I strive for on every project.`
   const bio2 = `Please feel free to check out my GitHub account or get in contact about your project. I look forward to hearing from you.`
 
   const projects = [
@@ -57,7 +57,7 @@ const Portfolio = (props) => {
   ]
 
   return (
-    <div className="Portfolio container">
+    <div className="Portfolio">
       <div className="row portfolio-intro my-2">
         <div className="col-lg-2 col-md-3 col-sm-6 mt-1">
           <div className="row justify-content-center">
@@ -66,33 +66,34 @@ const Portfolio = (props) => {
         </div>
         <div className="col-lg-10 col-md-7 col-sm-6 profile-text">
           <p>{bio}</p>
-         <p>{bio2}</p>
+          <p>{bio2}</p>
         </div>
       </div>
 
-
-      <div className="row">
-        {projects.map(project => {
-          return (
-            <div className="col-md-6 col-sm-12 d-flex ">
-              <div className="card flex-fill mb-2">
-                <img src={project.image} className="card-img-top card-image" alt={project.title} />
-                <div className="card-body">
-                  <h5 className="card-title">{project.title}</h5>
-                  <p className="card-text card-description">{project.description}</p>
-                  <p className="card-text card-description">{project.tools}</p>
-                  {project.link ?
-                    <a href={project.link} target="_blank" className="btn mr-2">See Site</a> :
-                    <a href={project.link} disabled className="btn mr-2 disabled">In Progress</a>
-                  }
-                  <a href={project.githubLink} className="btn ">See Code</a>
+      <div className="container">
+        <div className="row">
+          {projects.map(project => {
+            return (
+              <div className="col-md-6 col-sm-12 d-flex">
+                <div className="card flex-fill mb-2">
+                  <img src={project.image} className="card-img-top card-image" alt={project.title} />
+                  <div className="card-body">
+                    <h5 className="card-title">{project.title}</h5>
+                    <p className="card-text card-description">{project.description}</p>
+                    <p className="card-text card-description">{project.tools}</p>
+                    {project.link ?
+                      <a href={project.link} target="_blank" className="btn mr-2">See Site</a> :
+                      <a href={project.link} disabled className="btn mr-2 disabled">In Progress</a>
+                    }
+                    <a href={project.githubLink} className="btn ">See Code</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          )
-        }
+            )
+          }
 
-        )}
+          )}
+        </div>
       </div>
 
 

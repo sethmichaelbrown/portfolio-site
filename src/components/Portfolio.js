@@ -50,17 +50,12 @@ const Portfolio = (props) => {
     <div className="Portfolio container">
       <div className="row portfolio-intro my-2">
         <div className="col-lg-2 col-md-3 col-sm-6 mt-1">
-          <a href="https://www.linkedin.com/in/seth-brown1/" target='_blank'><div className="smb-profile" /></a>
-
+          <div className="row justify-content-center">
+            <a href="https://www.linkedin.com/in/seth-brown1/" target='_blank'><div className="smb-profile" /></a>
+          </div>
         </div>
         <div className="col-lg-10 col-md-7 col-sm-6 profile-text">
           <p>{bio}</p>
-          <button type="button" className="btn btn-lg mr-2">GitHub</button>
-          <Link className='' to='/contact'>
-            <button type="button" className="btn btn-lg">Contact</button>
-          </Link>
-
-
         </div>
       </div>
 
@@ -69,16 +64,16 @@ const Portfolio = (props) => {
         {projects.map(project => {
           return (
             <div className="col-md-6 col-sm-12 d-flex ">
-              <div class="card flex-fill mb-2">
-                <img src={project.image} class="card-img-top card-image" alt={project.title} />
-                <div class="card-body">
-                  <h5 class="card-title">{project.title}</h5>
-                  <p class="card-text card-description">{project.description}</p>
+              <div className="card flex-fill mb-2">
+                <img src={project.image} className="card-img-top card-image" alt={project.title} />
+                <div className="card-body">
+                  <h5 className="card-title">{project.title}</h5>
+                  <p className="card-text card-description">{project.description}</p>
                   {project.link ?
-                    <a href={project.link} target="_blank" class="btn mr-2">See Site</a> :
-                    <a href={project.link} disabled class="btn mr-2 disabled">In Progress</a>
+                    <a href={project.link} target="_blank" className="btn mr-2">See Site</a> :
+                    <a href={project.link} disabled className="btn mr-2 disabled">In Progress</a>
                   }
-                  <a href={project.githubLink} class="btn ">See Code</a>
+                  <a href={project.githubLink} className="btn ">See Code</a>
                 </div>
               </div>
             </div>

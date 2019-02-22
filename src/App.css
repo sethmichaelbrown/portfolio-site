@@ -26,8 +26,19 @@ body {
   color: #FFF4E0;
 }
 
+
+
+.nav-link:hover{
+  color: rgba(255, 244, 224, .75)
+}
+
 .navbar .navbar-toggler-icon {
   background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=FFF4E0');
+}
+
+.custom-toggler:focus{
+  border: none;
+  outline: none;
 }
 
 
@@ -76,11 +87,11 @@ body {
 }
 
 .portfolio-intro {
-  color: #393E46;
+  background: rgba(57, 62, 70, .85);
   padding: 1vh;
-  background: rgba(255, 244, 224, .8);
+  color: rgba(255, 244, 224, 1);
   border-radius: 10px;
-    /* background-color: #FFF4E0; */
+  /* background-color: #FFF4E0; */
 }
 
 .profile-text {

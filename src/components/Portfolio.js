@@ -10,6 +10,7 @@ import profile from '../images/smb-portrait.png'
 import bts from './project-images/bts-app.png'
 import riverfront from './project-images/riverfront-hearing.png'
 import rjmusic from './project-images/rjmusic.png'
+import road from './project-images/road.png'
 
 // Styling
 import '../App.css'
@@ -17,7 +18,8 @@ import '../Fonts.css'
 
 const Portfolio = (props) => {
 
-  const bio = 'My name is Seth Brown, I am a full stack developer with an emphasis on frontend work in ReactJS. I have worked with individual clients looking for a website for their small business, non-profits, and large companies looking to move away from bulky and costly solutions like Wix. Clean aesthetics, ease of use and navigation, powerful capabilities, and clear communication during the build are goals I strive for on every project. Please feel free to check out my GitHub account or get in contact about your project. I look forward to hearing from you.'
+  const bio = `My name is Seth Brown, I am a full stack developer with an emphasis on frontend work in ReactJS. I have worked with individual clients looking for a website for their small business, non-profits, and large companies looking to move away from bulky and costly solutions like Wix. Clean aesthetics, ease of use and navigation, powerful capabilities, and clear communication during the build are goals I strive for on every project.` 
+  const bio2 = `Please feel free to check out my GitHub account or get in contact about your project. I look forward to hearing from you.`
 
   const projects = [
     {
@@ -44,6 +46,14 @@ const Portfolio = (props) => {
       githubLink: 'https://github.com/sethmichaelbrown/robert-james-music',
       tools: 'JavaScript, MaterializeCSS, HTML5+ CSS3, Node.js'
     },
+    {
+      title: 'Currently Seeking Opportunities',
+      description: "If you need a web development project completed - from a basic site to a scalable app, get in touch with me.",
+      image: road,
+      link: 'https://github.com/sethmichaelbrown/',
+      githubLink: 'https://github.com/sethmichaelbrown/',
+      tools: 'ReactJS, JavaScript, HTML5+ CSS3, Node.js, Express, PostgreSQL & more!'
+    },
   ]
 
   return (
@@ -56,6 +66,7 @@ const Portfolio = (props) => {
         </div>
         <div className="col-lg-10 col-md-7 col-sm-6 profile-text">
           <p>{bio}</p>
+         <p>{bio2}</p>
         </div>
       </div>
 
@@ -69,6 +80,7 @@ const Portfolio = (props) => {
                 <div className="card-body">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text card-description">{project.description}</p>
+                  <p className="card-text card-description">{project.tools}</p>
                   {project.link ?
                     <a href={project.link} target="_blank" className="btn mr-2">See Site</a> :
                     <a href={project.link} disabled className="btn mr-2 disabled">In Progress</a>

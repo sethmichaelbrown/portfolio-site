@@ -64,4 +64,11 @@ body {
 }
 
 /* Portfolio Styling */
+.card {
+  background-color: #393E46;
+  color: #FFF4E0;
+}
 
+.card-description {
+  overflow: scroll;
+}

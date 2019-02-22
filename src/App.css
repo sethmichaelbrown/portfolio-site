@@ -1,6 +1,6 @@
 html,
 body {
-  background: url(images/background-home.png) no-repeat center center fixed;
+  background: url(images/background-home.png) no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

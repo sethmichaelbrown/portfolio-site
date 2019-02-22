@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 // Components
 import NavBar from './components/NavBar'
+import Home from './components/Home'
 
 // Styling
 import './App.css'
@@ -31,6 +32,7 @@ class App extends Component {
           <NavBar
             changeDisplayPortfolio={this.changeDisplayPortfolio}
             displayPortfolio={this.state.displayPortfolio} />
+
 
         </ Router>
       </div>

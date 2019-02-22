@@ -56,8 +56,8 @@ const Portfolio = (props) => {
         <div className="col-lg-10 col-md-7 col-sm-6 profile-text">
           <p>{bio}</p>
           <button type="button" className="btn btn-lg mr-2">GitHub</button>
-          <Link className='link-text' to='/contact'>
-            <button type="button" className="btn btn-lg">Portfolio</button>
+          <Link className='' to='/contact'>
+            <button type="button" className="btn btn-lg">Contact</button>
           </Link>
 
 

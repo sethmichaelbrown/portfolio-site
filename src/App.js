@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 
+
 // Components
 import NavBar from './components/NavBar'
 
@@ -12,12 +13,6 @@ import './Fonts.css'
 class App extends Component {
   state = {
     displayPortfolio: false,
-  }
-
-  display = () => {
-    setTimeout(
-      this.setState({ display: true })
-      , 10)
   }
 
   changeDisplayPortfolio = () => {

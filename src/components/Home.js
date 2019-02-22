@@ -14,8 +14,8 @@ const Home = (props) => {
     <div className="Home">
       <div className="row header-row">
         <div className="col-12 header mt-3">
-          <h2>Built, Beautifully</h2>
-          <h6>Full Stack || ReactJS || UI/UX</h6>
+          <h1>Built, Beautifully</h1>
+          <h5>Full Stack || ReactJS || UI/UX</h5>
         </div>
       </div>
       <div className="row">

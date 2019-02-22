@@ -14,6 +14,12 @@ class App extends Component {
     displayPortfolio: false,
   }
 
+  display = () => {
+    setTimeout(
+      this.setState({ display: true })
+      , 10)
+  }
+
   changeDisplayPortfolio = () => {
     const newState = { ...this.state }
     newState.displayPortfolio = !newState.displayPortfolio
@@ -27,9 +33,9 @@ class App extends Component {
       <div className="App">
         <Router>
 
-          <NavBar 
+          <NavBar
             changeDisplayPortfolio={this.changeDisplayPortfolio}
-            displayPortfolio={this.state.displayPortfolio}/>
+            displayPortfolio={this.state.displayPortfolio} />
 
         </ Router>
       </div>

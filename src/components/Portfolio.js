@@ -16,14 +16,14 @@ import '../Fonts.css'
 const Portfolio = (props) => {
 
   const bio = `My name is Seth Brown, I am a full stack developer with an emphasis on frontend work in ReactJS. I have worked with individual clients looking for a website for their small business, non-profits, and large companies looking to move away from bulky and costly solutions like Wix. Clean aesthetics, ease of use and navigation, powerful capabilities, and clear communication during the build are goals I strive for on every project.`
-  const bio2 = `Please feel free to check out my GitHub account or get in contact about your project. I look forward to hearing from you.`
+  const bio2 = `Please feel free to check out my GitHub account, or get in contact me regarding your project. I look forward to hearing from you!`
 
   let key = 1
 
   const projects = [
     {
       title: 'Bus To Show',
-      description: "Member of a team that built, deployed, and continue to maintain the new Bus To Show website that allows for reservations to be fulfilled. Lead the frontend development & UI / UX, assisted with backend architecture.",
+      description: "Member of a team that built, deployed, and continues to maintain the new Bus To Show website. The site currently allows for reservations to be taken and fulfilled. Lead the frontend development & UI / UX, assisted with backend architecture.",
       link: '',
       image: bts,
       githubLink: 'https://github.com/sethmichaelbrown/bus-to-show-2',
@@ -31,7 +31,7 @@ const Portfolio = (props) => {
     },
     {
       title: 'Riverfront Hearing',
-      description: "Michigan’s leading family audiologist practice was looking to move away from using Wix and have a custom site, with ease of navigation and simplicity of design taking priority.",
+      description: "Michigan’s leading family audiologist practice was looking to move away from using Wix. They wanted a custom site with ease of navigation and simplicity of design taking priority.",
       image: riverfront,
       link: 'http://riverfront.surge.sh',
       githubLink: 'https://github.com/sethmichaelbrown/riverfront-website',
@@ -39,7 +39,7 @@ const Portfolio = (props) => {
     },
     {
       title: 'Robert James Music',
-      description: "Boulder-based musician and guitar teacher, Robb James, needed a rebuild of his website to better facilitate bringing in new clients.",
+      description: "Boulder-based musician and guitar teacher, Robert James, needed a rebuild of his website to better facilitate bringing in new clients.",
       image: rjmusic,
       link: 'http://rj-music.surge.sh',
       githubLink: 'https://github.com/sethmichaelbrown/robert-james-music',
@@ -47,7 +47,7 @@ const Portfolio = (props) => {
     },
     {
       title: 'Currently Seeking Opportunities',
-      description: "If you need a web development project completed - from a basic site to a scalable app, get in touch with me.",
+      description: "If you need a web development project completed - from a basic site to a scalable app - get in touch with me.",
       image: road,
       link: 'https://github.com/sethmichaelbrown/',
       githubLink: 'https://github.com/sethmichaelbrown/',

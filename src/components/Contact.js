@@ -13,11 +13,11 @@ import '../Fonts.css'
 
 const Contact = (props) => {
 
-  const missionStatment = 'To bring value, efficiency, and strong communication to all aspects of the project. Whether client or employer, I will work to ensure your project is completely in a timely manner. I will work with you to find the best solutions to the problems you need solved. From inception to realization or anywhere in between, I can help to optimize, refactor or build a solution tailored to you. Building, management, optimization/ SEO services all available.'
+  const missionStatment = 'My mission is to bring value, efficiency, and strong communication to all aspects of the project. Whether client or employer, I will work to ensure your project is completed in a timely manner. I will work with you to find the best solutions to the problems you need solved. From inception to realization or anywhere in between, I can help to optimize, refactor or build a solution tailored to you. Building, management, optimization/ SEO services all available.'
   const technicalSkills = [
     'ReactJS',
     'React Native',
-    'JavaScript (ES2018)',
+    'JavaScript (ES6+)',
     'CoffeeScript',
     'Python',
     'Django',

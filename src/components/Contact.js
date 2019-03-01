@@ -15,6 +15,7 @@ const Contact = (props) => {
 
   const missionStatment = 'My mission is to bring value, efficiency, and strong communication to all aspects of the project. Whether client or employer, I will work to ensure your project is completed in a timely manner. I will work with you to find the best solutions to the problems you need solved. From inception to realization or anywhere in between, I can help to optimize, refactor or build a solution tailored to you. Building, management, optimization/ SEO services all available.'
   const technicalSkills = [
+    'AWS (Amplify, Cloudwatch, Cognito, Gateway, Lambda, & more)',
     'ReactJS',
     'React Native',
     'JavaScript (ES6+)',

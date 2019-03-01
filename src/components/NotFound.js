@@ -4,8 +4,6 @@ import { Route, Link } from 'react-router-dom'
 
 // Components
 
-// Images
-import profile from '../images/smb-portrait.png'
 
 
 // Styling
@@ -14,11 +12,26 @@ import '../Fonts.css'
 
 const NotFound = (props) => {
 
-  const bio = `My name is Seth Brown, I am a full stack developer with an emphasis on frontend work in ReactJS. I have worked with individual clients looking for a website for their small business, non-profits, and large companies looking to move away from bulky and costly solutions like Wix. Clean aesthetics, ease of use and navigation, powerful capabilities, and clear communication during the build are goals I strive for on every project.` 
 
   return (
     <div className="NotFound container">
-      Hello from NotFound
+      <div className="row justify-content-center mt-5">
+        <h1>Page Not Found</h1>
+      </div>
+
+      <div className="row">
+        <div className="col-12 btn-container">
+          <Link className='link-text' to='/'>
+            <button type="button" className="btn btn-lg mb-3">Home</button>
+          </Link>
+          {/* <Link className='link-text' to='/contact'>
+            <button type="button" className="btn btn-lg mb-3 ml-1">Contact</button>
+          </Link> */}
+
+        </div>
+      </div>
+
+
 
     </div >
   )

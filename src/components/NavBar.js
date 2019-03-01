@@ -18,7 +18,7 @@ import '../Fonts.css'
 
 const NavBar = (props) => {
 
-  let links = ['Contact', 'Portfolio', 'Resume'].sort()
+  let links = ['Contact', 'Portfolio'].sort()
   let key = 1
 
 
@@ -47,6 +47,9 @@ const NavBar = (props) => {
                 </li>
               )
             })}
+            <li>
+              <a className="nav-link" rel="noopener noreferrer" target='_blank' href="https://sethmichaelbrown.com/resume.pdf">Resume</a>
+            </li>
           </ul>
         </div>
 

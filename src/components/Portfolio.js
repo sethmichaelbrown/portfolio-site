@@ -8,6 +8,7 @@ import bts from './project-images/bts-app.png'
 import riverfront from './project-images/riverfront-hearing.png'
 import rjmusic from './project-images/rjmusic.png'
 import road from './project-images/road.png'
+import noteBase from './project-images/noteBase.png'
 
 // Styling
 import '../App.css'
@@ -22,9 +23,17 @@ const Portfolio = (props) => {
 
   const projects = [
     {
+      title: 'noteBase',
+      description: "A serverless, web-based app that leverages the power of AWS and ReactJS to allow users to take notes in text and code, side-by-side. This app was build solely by me and is currently in the final stages before deployment. Working beta available on request",
+      link: '',
+      image: noteBase,
+      githubLink: 'https://github.com/sethmichaelbrown/nb-client-3',
+      tools: 'AWS Platform, ReactJS, Bootstrap4'
+    },
+    {
       title: 'Bus To Show',
       description: "Member of a team that built, deployed, and continues to maintain the new Bus To Show website. The site currently allows for reservations to be taken and fulfilled. Lead the frontend development & UI / UX, assisted with backend architecture.",
-      link: '',
+      link: 'https://bustoshow.org/',
       image: bts,
       githubLink: 'https://github.com/sethmichaelbrown/bus-to-show-2',
       tools: 'ReactJS, JavaScript, HTML5+ CSS3, Node.js, Express, PostgreSQL'

@@ -48,7 +48,7 @@ const NavBar = (props) => {
               )
             })}
             <li>
-              <a className="nav-link" rel="noopener noreferrer" target='_blank' href="https://sethmichaelbrown.com/resume.pdf">Resume</a>
+              {/* <a className="nav-link" rel="noopener noreferrer" target='_blank' href="https://sethmichaelbrown.com/resume.pdf">Resume</a> */}
             </li>
           </ul>
         </div>

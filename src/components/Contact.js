@@ -78,7 +78,7 @@ const Contact = (props) => {
               </div>
               <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#smb-accordion">
                 <div class="card-body contact-card-body">
-                  <p>Please see my resume <a rel="noopener noreferrer" target='_blank' href={resume}>here</a></p>
+                  {/* <p>Please see my resume <a rel="noopener noreferrer" target='_blank' href={resume}>here</a></p> */}
                   <div className="row">
                     <div className="col-md-6 col-sm-12">
                       <p>Coding Skills</p>
